@@ -13,7 +13,7 @@ public class Tcode {
         JDABuilder jb = new JDABuilder(AccountType.BOT);
         jb.setAutoReconnect(true);
         jb.setStatus(OnlineStatus.ONLINE);
-        jb.setToken("add user Token");
+        jb.setToken("");
         jb.addEventListeners(new Listener());
         try{
             jda=jb.build();

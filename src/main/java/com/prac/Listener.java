@@ -18,7 +18,7 @@ public class Listener extends ListenerAdapter {
         if(msg.getContentRaw().charAt(0) == '!'){
             String[] args = msg.getContentRaw().substring(1).split(" ");
             if((args.length <=0))return;
-            if (args[0].equalsIgnoreCase("test")){
+            if (args[0].equalsIgnoreCase("test")&&args.length<2){
                 tc.sendMessage("Hello,"+user.getAsMention()).queue();
             }else if(args[0].equalsIgnoreCase("hello")){
                 if(args.length <2) return;
